@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="">
+    <!-- <div class=" bg-black h-40"></div>  
+    </div> -->
+    <div class="flex justify-end m-10 mr-32">
+        <button id="add" class="bg-red-500 w-40 h-14 hover:bg-red-800 rounded text-white">Add Product</button>
+    </div>
+   <div id ="cards" class=" grid lg:grid-cols-2 mt-10  gap-y-12 place-items-center ">
+        <!-- <div  class="bg-white flex flex-row w-11/12 p-5 border border-gray-200">
+            <div class="py-5 flex items-center justify-center h-56 overflow-hidden">
+                <img src = https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg class="w-44" >
+            </div>
+            <div class="text-center w-full h-56 flex flex-col justify-around">
+                <h3 class = "text-xl">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h3>
+                <h4 class="text-gray-600">$109.95</h4>
+                <div class="w-full flex flex-row justify-evenly">
+                    <button class="bg-yellow-200 w-20 h-7 hover:bg-yellow-400">Edit</button>
+                    <button class="bg-red-500 w-20 h-7 hover:bg-red-800 text-white">Delete</button>
+                </div>
+            </div>
+        </div> -->
+   </div>
+   <div id="input-form" class="fixed left-0 top-0 bg-black bg-opacity-60 w-screen h-screen justify-center items-center opacity-0 hidden">
+        <div class = "bg-gray-300 w-[25%] flex flex-col justify-center items-end pr-24 p-5">
+            <div class="flex flex-row m-2.5">
+                <p class="mr-5">ID:</p>
+                <input type="text" id="input-id" class="">
+            </div>
+            <div class="flex flex-row m-2.5">
+                <p class="mr-5">TITLE:</p>
+                <input type="text" id="input-title" class="">
+            </div>
+            <div class="flex flex-row m-2.5">
+                <p class="mr-5">PRICE:</p>
+                <input type="text" id="input-price" class="">
+            </div>
+            <div class="flex flex-row m-2.5">
+                <p class="mr-5">IMAGE LINK:</p>
+                <input type="text" id="input-img" class="">
+            </div>
+            <div class=" flex flex-row m-2.5 mr-7">
+                <button id="input-discard" class="bg-yellow-200 w-20 h-7 hover:bg-yellow-400 mr-12 rounded">Discard</button>
+                <button id="input-save" class="bg-red-500 w-20 h-7 hover:bg-red-800 text-white rounded">Save</button>
+            </div>
+        </div>
+   </div>
+   <div id="edit-form" class="fixed left-0 top-0 bg-black bg-opacity-60 w-screen h-screen justify-center items-center opacity-0 hidden">
+    <div class = "bg-gray-300 w-[25%] flex flex-col justify-center items-end pr-24 p-5">
+        <div class="flex flex-row m-2.5">
+            <p class="mr-5">ID:</p>
+            <input type="text" id="edit-id" class="">
+        </div>
+        <div class="flex flex-row m-2.5">
+            <p class="mr-5">TITLE:</p>
+            <input type="text" id="edit-title" class="">
+        </div>
+        <div class="flex flex-row m-2.5">
+            <p class="mr-5">PRICE:</p>
+            <input type="text" id="edit-price" class="">
+        </div>
+        <div class="flex flex-row m-2.5">
+            <p class="mr-5">IMAGE LINK:</p>
+            <input type="text" id="edit-img" class="">
+        </div>
+        <div class=" flex flex-row m-2.5 mr-7">
+            <button id="edit-discard" class="bg-yellow-200 w-20 h-7 hover:bg-yellow-400 mr-12 rounded">Discard</button>
+            <button id="edit-save" class="bg-red-500 w-20 h-7 hover:bg-red-800 text-white rounded">Save</button>
+        </div>
+    </div>
+</div>
+   <script src="myscripts.js"></script>
+   <script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
+</body>
+</html>
